@@ -16,6 +16,12 @@
       border: none;
     }
 
+    .chamada-texto {
+      font-size: 15px;
+      font-family: sans-serif;
+      padding: 0 20px;
+    }
+
     img {
       display: block;
     }
@@ -50,6 +56,19 @@
 
     .vantagem hr {
       margin-top: 15px;
+    }
+
+    @media (max-width: 520px) {
+      .vantagem {
+        display: block;
+        max-width: 90%;
+        width: 100%;
+      }
+
+      .vantagem--espacador {
+        display: block;
+        height: 0px;
+      }
     }
 
     .vantagem-titulo {
@@ -111,7 +130,7 @@
     </tr>
     <tr>
       <td align="center">
-        <span style="font-size: 15px; font-family: sans-serif;">
+        <span class="chamada-texto">
           Jão Vincente convidou você para o banco mais digital que existe na atualidade!
           <br><br>
         </span>
@@ -148,7 +167,7 @@
     </tr>
     <tr>
       <td align="center">
-        <a href="#" class="cta">
+        <a href="https://www.google.com/" class="cta">
           ACEITAR CONVITE
         </a>
         <br><br><br>
@@ -163,10 +182,10 @@
       <td align="center">
         <table>
           <tr>
-            <td width="33%">
+            <td width="33%" class="vantagem">
               <table>
                 <tr>
-                  <td class="vantagem">
+                  <td>
                     <img src="images/Icone_Cadastro_Facilitado.png" alt="" class="vantagem-icone">
                     <span class="vantagem-titulo">
                       Cadastro Fácil
@@ -181,10 +200,10 @@
                 </tr>
               </table>
             </td>
-            <td width="33%">
+            <td width="33%" class="vantagem--espacador">
               &nbsp;
             </td>
-            <td width="33%">
+            <td width="33%" class="vantagem">
               <table>
                 <tr>
                   <td class="vantagem">
